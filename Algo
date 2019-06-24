@@ -7,3 +7,16 @@ def strlen(word):
     return c
 
 print(strlen("hello world"))
+
+//Palindrome
+def strrev(a):
+    return(a[::-1])
+def ispalin(b):
+    c = strrev(b)
+    if(c == b):
+        print("Yes Palindrome")
+    else:
+        print("Not a Palindrome")
+p="Man"
+ispalin(p)
+    
