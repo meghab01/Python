@@ -1,0 +1,9 @@
+//return string length
+
+def strlen(word):
+    c = 0
+    for i in word:
+        c+=1
+    return c
+
+print(strlen("hello world"))
