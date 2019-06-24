@@ -25,6 +25,8 @@ def IP4 (i):
     n = i.split('.')
     print (n)
     for i in n:
+        if (int(i [0])) == 0:
+            return False
         if (len(i) > 3):
             return False
         if not i.isdigit():
@@ -34,6 +36,6 @@ def IP4 (i):
             return False
     else:
         return True
-p='265..1.1'
+p='234.01.1.1'
 print(IP4(p))
     
