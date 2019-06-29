@@ -40,4 +40,28 @@ def IP4 (i):
         return True
 p='234.01.1.1'
 print(IP4(p))
-    
+
+//Read from text file and print
+
+myfile = open("fruits.txt")
+content = myfile.read()
+myfile.close()
+content = content.splitlines()
+for i in content:
+     print(len(i))
+     
+//Jump list by n numbers
+def jump(list):
+    i=0
+    c=0
+    l=len(list)-1
+    while i<l:
+        if list[i]==0:
+            return -1
+        else:
+            i = i+list[i]
+            c+=1
+    return c
+
+a=[0,4,1,2,3,1,1,1,1,1,1]
+print(jump(a))
