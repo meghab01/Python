@@ -75,3 +75,17 @@ def digit_sum(number):
     return s
 a=123
 print(digit_sum(a))
+
+//number palindrome
+def palin(n):
+    n=str(n)
+    l=len(n)-1
+    for i in range(0,round(len(n)/2)):
+        if n[i]!=n[l]:
+            return "Not"
+        i+=1
+        l-=1
+    return "Yes"
+
+n=123454321
+print(palin(n))
