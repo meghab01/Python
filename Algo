@@ -65,3 +65,13 @@ def jump(list):
 
 a=[0,4,1,2,3,1,1,1,1,1,1]
 print(jump(a))
+
+//return sum of digits
+def digit_sum(number):
+    number = str(number)
+    s=0
+    for n in number:
+        s=s+int(n)
+    return s
+a=123
+print(digit_sum(a))
