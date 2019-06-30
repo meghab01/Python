@@ -76,6 +76,22 @@ def digit_sum(number):
 a=123
 print(digit_sum(a))
 
+//remove matching numbers from sorted array
+
+def rem(n):
+    l=len(n)-2
+    for i in range(0, l):
+        if n[i]==n[i+1]:
+            n.pop(i)
+            l=l-1
+            print(n,l,i)
+            i+=1
+        i+=1
+    return n
+
+n=[1,2,2,3]
+print(rem(n))
+
 //number palindrome
 def palin(n):
     n=str(n)
