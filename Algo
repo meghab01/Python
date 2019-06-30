@@ -105,3 +105,21 @@ def palin(n):
 
 n=123454321
 print(palin(n))
+
+// return length of array after removing duplicates
+
+def rem(n):
+    l=len(n)-2
+    for i in range(0, l):
+        while n[i]==n[i+1]:
+            n.pop(i)
+            l=l-1
+        if i==l:
+            return len(n)
+        else:
+            i+=1
+    return len(n)
+
+n=[0,0,1,1,1,2,2,3,3,4]
+print(rem(n))
+        
