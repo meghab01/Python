@@ -132,6 +132,22 @@ for x,y in zip(n[:-1],n[1:]):
         a=y-x
         s+=a
         print(s)
+       
+ //List rotate by k
+ 
+ def rot(n,k):
+    l=len(n)
+    a=n[l-k:]
+    while(k!=0):
+        n.pop(-1)
+        k-=1       
+    for x in n:
+        a.append(x)
+    print(a)
+
+n=[-1,-100,3,99]
+k=2
+rot(n,k)
         
         
         
