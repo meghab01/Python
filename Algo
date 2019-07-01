@@ -161,4 +161,22 @@ def s(nums):
 
 nums = [0,1,0,3,12]
 s(nums)
-        
+
+
+//if sum of two matches given target
+
+def s(nums,t):
+    for i in nums[:]:
+        for j in nums[1:]:
+            if(nums.index(i)!=nums.index(j)):
+                if i+j==t:
+                    return(i,j)
+                       
+            else:
+                continue
+            continue
+        return 1
+
+nums = [2, 7, 11, 15]
+t=14
+print(s(nums,t))
