@@ -193,3 +193,25 @@ def maxf(a):
 
 a=[1,3,5,-1]
 print(maxf(a))
+
+//return sum of consecutive elements
+def maxf(a):
+    b=[]
+    for i,j in zip(a[:len(a)-1],a[1:len(a)]):
+                   b.append(i+j)
+    return b
+        
+
+a=[1,3,5,-1]
+print(maxf(a))
+
+//check if sum of consecutive numbers exists in a list
+def maxf(a):
+    for i,j in zip(a[:len(a)-1],a[1:len(a)]):
+                   if (i+j in a):
+                        return True
+                   else:
+                        continue
+    return False       
+a=[1,3,5,-1,4]
+print(maxf(a))
