@@ -215,3 +215,43 @@ def maxf(a):
     return False       
 a=[1,3,5,-1,4]
 print(maxf(a))
+
+//linked list
+
+class Node(object):
+
+    def __init__(self, value):
+        self.value = value
+        self.next  = None
+    def pri(a):
+        print(a.value,a.next.value)
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n1.next=n2
+n2.next=n3
+Node.pri(n1)
+//linked list cycle detect
+class Node(object):
+    def __init__(self,n):
+        self.value=n
+        self.next=None
+    def cycle(fn):
+        v=[]
+        while(fn.next is not None):
+            print(v,fn.value)
+            if fn in v:
+                return True
+            else:
+                v.append(fn.value)
+                fn=fn.next
+        return False
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n4=Node(4)
+n1.next=n2
+n2.next=n3
+n3.next=n4
+
+print(Node.cycle(n1))
