@@ -255,3 +255,18 @@ n2.next=n3
 n3.next=n4
 
 print(Node.cycle(n1))
+
+// return nth fibonacci given n
+
+def fib(n):
+    i=0
+    j=1
+    while n>1:
+        s=i+j
+        i=j
+        j=s
+        n-=1
+    return j
+
+print(fib(9))
+    
