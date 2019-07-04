@@ -270,3 +270,9 @@ def fib(n):
 
 print(fib(9))
     
+//dictionary rotation
+
+l=["sat","tat","uat","at","bat"]
+for x,y in zip(l[:-1],l[1:]):
+    if x[0]>y[0]:
+        print (l.index(y))
