@@ -276,3 +276,19 @@ l=["sat","tat","uat","at","bat"]
 for x,y in zip(l[:-1],l[1:]):
     if x[0]>y[0]:
         print (l.index(y))
+        
+ //return product of all integers except that index
+ def pro(a):
+    b=[]
+    for x in a[:]:
+        p=1
+        for y in a[:]:
+            if a.index(x)==a.index(y):
+                continue
+            else:
+                p*=y
+        b.append(p)
+    return(b)   
+
+a=[1, 7, 3, 0]
+print(pro(a))
