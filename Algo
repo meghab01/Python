@@ -292,3 +292,20 @@ for x,y in zip(l[:-1],l[1:]):
 
 a=[1, 7, 3, 0]
 print(pro(a))
+//optimized for O(n) time and memory complexity
+def pro(a):
+    p=1
+    f=[None]*len(a)
+    for i in range(len(a)):
+        f[i]=p
+        p*=a[i]
+    print (f) 
+    p=1
+    for i in range(len(a)-1,-1,-1): 
+        print (i)
+        f[i]*=p
+        p*=a[i]
+    return(f)   
+
+a=[1, 7, 3, 6]
+print(pro(a))
