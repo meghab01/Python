@@ -309,3 +309,25 @@ def pro(a):
 
 a=[1, 7, 3, 6]
 print(pro(a))
+//if orders were processing first in first out
+def check(a,b,c):
+    while len(c)>0:
+        print(len(c))
+        if len(a)>0 and c[0]==a[0]:
+            c.pop(0)
+            a.pop(0)
+            print(c,a)  
+        elif c[0]==b[0]:
+            c.pop(0)
+            b.pop(0)
+            print(c,b)
+        else:
+                print("Queue not followed")
+                return False
+    return True           
+                
+
+a=[1, 7, 3, 6,0]
+b=[2,4,9]
+c=[2,4,9,1, 7, 3, 6,0]
+print(check(a,b,c))
