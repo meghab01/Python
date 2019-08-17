@@ -1,0 +1,14 @@
+from twilio.rest import Client
+def msg(event=None, context=None):
+    twilio_sid='AC6d465977c170a87e4c5be9bc86aa8bcd'
+    auth_token='d43bf13914cb7459c4aff5bb2879788a'
+    whatsapp_client=Client(twilio_sid,auth_token)
+    contact_dir={'baby':'+1'}
+    for key,value in contact_dir.items():
+        love=whatsapp_client.messages.create(
+        body='Hi there!'.format(key),
+        from_='whatsapp:+14155238886',
+        to='whatsapp:'+value,)
+    print(love.sid)  
+msg()    
+    
